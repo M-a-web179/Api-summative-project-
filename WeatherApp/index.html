@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugisha Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mugisha Weather</h1>
+            <p>Real-time weather for any location</p>
+        </header>
+        
+        <main>
+            <div class="search-box">
+                <input type="text" id="location" placeholder="e.g., Kigali, London, 90210">
+                <button id="search-btn">Search</button>
+            </div>
+            
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Loading weather data...</p>
+            </div>
+            
+            <div id="weather-display" class="hidden">
+                <div class="current-weather">
+                    <h2 id="city-name"></h2>
+                    <div class="weather-main">
+                        <img id="weather-icon" src="" alt="Weather icon">
+                        <div>
+                            <p class="temperature"><span id="temp"></span>°C</p>
+                            <p id="condition"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="weather-details">
+                    <div class="detail">
+                        <span>Feels Like</span>
+                        <span id="feels-like"></span>
+                    </div>
+                    <div class="detail">
+                        <span>Humidity</span>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="detail">
+                        <span>Wind Speed</span>
+                        <span id="wind"></span>
+                    </div>
+                    <div class="detail">
+                        <span>UV Index</span>
+                        <span id="uv"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="error" class="hidden">
+                <p>⚠️ Could not fetch weather. Try again.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Powered by <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI.com</a></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
