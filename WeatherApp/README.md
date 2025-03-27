@@ -1,5 +1,5 @@
 # Mugisha Weather App  
-**Live Demo:** [mugisha.tech](https://mugisha.tech)  
+**Live Demo:** https://www.youtube.com/watch?v=yQZHNuUNSnE 
 
 Real-time weather forecasts for any location worldwide.  
 
