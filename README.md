@@ -22,4 +22,8 @@ Enable HTTPS:
 sudo certbot --nginx -d mugisha.tech -d www.mugisha.tech
 
 API Attribution
+Powered by https://www.weatherapi.com/
 
+Troubleshooting
+Certbot errors: sudo ufw allow 80/tcp && sudo certbot --nginx --debug-challenges -d mugisha.tech
+"README.md" 26L, 796B                                                         
